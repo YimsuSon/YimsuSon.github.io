@@ -10,13 +10,23 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+# 테마 설정에 대한 부분입니다. 기본 설정을 유지하였습니다.
+ theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+
+# 스킨을 설정하는 부분입니다. 
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+# Site Settings
+locale                   : "ko-KR" # 사이트의 언어 설정을 할 수있습니다.
+# 표시되는 언어의 내용은 _data/ui-text.yml 에서 수정이 가능합니다.
+
+
+# 블로그 제목
+title                    : "Yimsu Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
