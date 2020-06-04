@@ -39,7 +39,7 @@ title                    : "Imreplay blog" # 블로그 제목
 title_separator          : "-" # 글 제목 - 블로그 제목  과 같이 사이트를 표시해줍니다.
 name                     : "Imreplay" # 사이트 소유자의 이름을 사용합니다.(Used to assign a site author.)
 description              : "Imreplay's personal website." # 사이트에 대한 간단한 설명입니다.
-url                      : "https://blog.imreplay.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://yimsuson.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 # 사이트의 주소를 입력합니다.
 
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -120,9 +120,9 @@ social:
 #구글 애널리틱스에 대한 설정입니다.
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : #"google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-120523980-2"
+    tracking_id          : #"UA-120523980-2"
     anonymize_ip         : # true, false (default)
 
 # 사이트 소유자에 대한 정보를 작성합니다.
@@ -133,7 +133,7 @@ author:
   bio              : "천천히 굴러가는 개인 공부 블로그"
   location         : "Republic of Korea"
   email            : "imreplay@imreplay.xyz"
-  uri              : "https://blog.imreplay.xyz"
+  uri              : "https://yimsuson.github.io/"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -325,11 +325,11 @@ defaults:
 # or "master" otherwise
 safe: False
 lsi: False
-username: imreplay # Github Username
-repo: blog # Github repo name
+username: yimsuson # Github Username
+repo: yimsuson.github.io # Github repo name
 branch: master # 작업 브랜치를 설정
 relative_source: ../blog/ # 저는 repo 이름으로 설정했습니다.
 destination: ../posts # 빌드시 작업파일이 저장될 경로
-production_url:  https://blog.imreplay.xyz # 사이트 URL
-source_url:  https://github.com/imreplay/blog/ # Github 저장소 URL
+production_url:  https://yimsuson.github.io/ # 사이트 URL
+source_url:  https://yimsuson.github.io/ # Github 저장소 URL
 
