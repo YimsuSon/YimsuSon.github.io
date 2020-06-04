@@ -328,7 +328,7 @@ lsi: False
 username: yimsuson # Github Username
 repo: yimsuson.github.io # Github repo name
 branch: master # 작업 브랜치를 설정
-relative_source: ../blog/ # 저는 repo 이름으로 설정했습니다.
+relative_source: ../yimsuson.github.io/ # 저는 repo 이름으로 설정했습니다.
 destination: ../posts # 빌드시 작업파일이 저장될 경로
 production_url:  https://yimsuson.github.io/ # 사이트 URL
 source_url:  https://yimsuson.github.io/ # Github 저장소 URL
