@@ -39,7 +39,7 @@ words_per_minute         : 200
 
  #댓글 설정에 대한부분입니다. 기본적으로 false 로 되어있습니다.
 comments:
-  provider               : #"disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : #  "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   #개인적으로 disqus 댓글 모듈을 사용하였습니다.
   disqus:
     shortname            : yimsu-blog # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -48,7 +48,7 @@ comments:
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    https://developers.facebook.com/docs/plugins/comments
+    #https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
