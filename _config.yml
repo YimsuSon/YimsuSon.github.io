@@ -94,7 +94,7 @@ search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 
 # 저의 경우 algolia 를 사용하고 있으며 추가설정이 필요합니다.
-search_provider          : # algolia # lunr (default), algolia, google
+search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : #237ZENFYNY  # YOUR_APPLICATION_ID
   index_name             : #blog   # YOUR_INDEX_NAME
@@ -222,8 +222,8 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - #/docs # ignore Minimal Mistakes /docs
+  - #/test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -261,9 +261,9 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Seoul" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
+# 플러그인을 정의하는 부분입니다.
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -318,6 +318,10 @@ compress_html:
     envs: development
 
 
+# Front Matter 설정입니다.
+# 페이지 본문에 적용되는 기본 설정들을 정의합니다.
+# path 값으로 경로를 설정해 줍니다.
+
 # Defaults
 defaults:
   # _posts
@@ -328,6 +332,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
