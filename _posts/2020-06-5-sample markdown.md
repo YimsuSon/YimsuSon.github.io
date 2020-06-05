@@ -1,11 +1,17 @@
 
 ---
+title: "minimal mistakes 테마를 이용해 github.io 블로그 구축하기"
+
+last_modified_at: 2018-07-01T13:00:00+09:00
+toc: true
+
+
 tags: # 태그 사용
     - tag1
     - tag2
 
 categories: #카테고리
-  - category a
+  - category blogging
 
 author_profile: true / false #작성자 프로필 출력여부
 read_time: false # read_time을 출력할지 여부 1min read 같은것!
@@ -35,6 +41,9 @@ header:  # 헤더에 유튜브 비디오 삽입
 
 link: https://github.com # Direct Link 만들기
 
+
 ---
+
+
 
 ## test2
