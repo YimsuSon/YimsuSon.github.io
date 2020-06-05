@@ -28,10 +28,13 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
+words_per_minute         : 200 #read time을 계산하기 위한 분당 읽는 글자수 입니다.
+
+
+
+comments: # 댓글 설정에 대한부분입니다. 기본적으로 false 로 되어있습니다.
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
+  disqus: #개인적으로 disqus 댓글 모듈을 사용하였습니다.
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
@@ -51,8 +54,12 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+#사이트내 검색 설정에 대한 부분입니다.
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
+
+# 저의 경우 algolia 를 사용하고 있으며 추가설정이 필요합니다.
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -62,6 +69,8 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+
+# SEO Related 웹마스터 도구 사용을 도와주는 부분입니다.
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -83,6 +92,9 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+
+
+#구글 애널리틱스에 대한 설정입니다.
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -91,6 +103,8 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
+
+# 사이트 소유자에 대한 정보를 작성합니다.
 # Site Author
 author:
   name             : "Your Name"
@@ -212,6 +226,8 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+
+# 플러그인을 정의하는 부분입니다.
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -266,6 +282,10 @@ compress_html:
     envs: development
 
 
+
+# Front Matter 설정입니다.
+# 페이지 본문에 적용되는 기본 설정들을 정의합니다.
+# path 값으로 경로를 설정해 줍니다.
 # Defaults
 defaults:
   # _posts
@@ -279,3 +299,31 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+  # 테마에 포함되어 있던 Docs 폴더의 _config.yml을 참고하여 _pages 폴더를 만들고 그 폴더에 대한 출력 방법을 정의 했습니다.
+  # _pages
+
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+
+# Travis-ci 를 사용하기 위해 추가한 부분입니다.
+# Jasper2 테마의 Travis-ci 설정부분을 사용합니다. 
+#
+#build option
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
