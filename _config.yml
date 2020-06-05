@@ -158,17 +158,17 @@ author:
        #url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/"
+       #url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/"
+       #url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/"
+       #url: "https://instagram.com/"
     - linkedin: "Linkedin"
-       url: "https://linkedin.com"
+       #url: "https://linkedin.com"
     - youtuve: "Youtube"
-       url: "https://youtube.com"
+       #url: "https://youtube.com"
 
 # Site Footer
 footer:
