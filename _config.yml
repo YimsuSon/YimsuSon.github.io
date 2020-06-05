@@ -112,12 +112,7 @@ author:
   bio              : "임수의 블로그에 오신것을 환영합니다!"
   location         : "republic Korea"
   email            : lab10922@gmail.com
-  
-  <div class="col-lg-4 col-md-2">
-  {% for category in site.categories%}
-    {{category}}
-  {% endfor %}
-  </div>  
+
   
     links:
     - label: "Email"
