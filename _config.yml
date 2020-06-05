@@ -39,7 +39,7 @@ words_per_minute         : 200
 
  #댓글 설정에 대한부분입니다. 기본적으로 false 로 되어있습니다.
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : #"disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   #개인적으로 disqus 댓글 모듈을 사용하였습니다.
   disqus:
     shortname            : yimsu-blog # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -90,8 +90,8 @@ atom_feed:
 
 
 #사이트내 검색 설정에 대한 부분입니다.
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
 
 # 저의 경우 algolia 를 사용하고 있으며 추가설정이 필요합니다.
 search_provider          : # algolia # lunr (default), algolia, google
