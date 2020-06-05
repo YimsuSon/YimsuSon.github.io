@@ -4,6 +4,7 @@ title: "minimal mistakes 테마를 이용해 github.io 블로그 구축하기"
 categories: 
   - blogging
 
+
 toc: true
 
 toc: true #Table Of Contents 목차 보여줌
