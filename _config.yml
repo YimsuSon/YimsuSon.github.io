@@ -111,7 +111,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "임수의 블로그에 오신것을 환영합니다!"
   location         : "republic Korea"
-  email            : lab10922@gmail.com
+  email            : "lab10922@gmail.com"
 
   
     links:
