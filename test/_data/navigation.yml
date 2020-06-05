@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "About222222222222"
+  - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Posts"
     url: /year-archive/

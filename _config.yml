@@ -10,28 +10,18 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# 테마 설정에 대한 부분입니다. 기본 설정을 유지하였습니다.
- theme                  : "minimal-mistakes-jekyll"
+# theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-
-
-# 스킨을 설정하는 부분입니다. 
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-# Site Settings
-locale                   : "ko-KR" # 사이트의 언어 설정을 할 수있습니다.
-# 표시되는 언어의 내용은 _data/ui-text.yml 에서 수정이 가능합니다.
-
-
-# 블로그 제목
-title                    : "Yimsu Blog"
+locale                   : "en-US"
+title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Yimsu"
-description              : "Yimsu's Word."
-url                      : "https://yimsuson.github.io/" 
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -286,16 +276,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: # true
       share: true
       related: true
-
-
-        # _pages 부분입니다.
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # >>>>>>>>>>>>>>>>>>>> 여기까지 추가 됨
