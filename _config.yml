@@ -18,21 +18,33 @@ minimal_mistakes_skin    : "dark" #"default" "air", "aqua", "contrast", "dark", 
 locale                   : "ko-KR"
 title                    : "Yimsu's Blog"
 title_separator          : "-"
+
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+
+name                     : "Yimsu"
+description              : "Wounderful Website."
 url                      : "https://yimsuson.github.io"
+
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Yimsuson/yimsuson.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+
+ #read time을 계산하기 위한 분당 읽는 글자수 입니다.
+words_per_minute         : 200 
+
+
+ #댓글 설정에 대한부분입니다. 기본적으로 false 로 되어있습니다.
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  #개인적으로 disqus 댓글 모듈을 사용하였습니다.
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : yimsu-blog # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  
+  
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
