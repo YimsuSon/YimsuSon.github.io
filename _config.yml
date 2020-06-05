@@ -111,8 +111,15 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "임수의 블로그에 오신것을 환영합니다!"
   location         : "republic Korea"
-  email            :
-  links:
+  email            : lab10922@gmail.com
+  
+  <div class="col-lg-4 col-md-2">
+  {% for category in site.categories%}
+    {{category}}
+  {% endfor %}
+  </div>  
+  
+    links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
