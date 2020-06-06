@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Yimsu Blog"
+title                    : "Softness"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yimsu"
@@ -107,9 +107,9 @@ analytics:
 # 사이트 소유자에 대한 정보를 작성합니다.
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Yimsu Blog"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "임수의 블로그에 오신것을 환영합니다!"
+  bio              : "The bird fights its way out of egg. The egg is the word. Who would be born must destroy a world. The bird flies to God. That God is Abraxax"
   location         : "republic Korea"
   email            : 
 
