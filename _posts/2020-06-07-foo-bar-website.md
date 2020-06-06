@@ -5,41 +5,16 @@ header:
   image: /assets/images/foo-bar-identity.jpg
   teaser: /assets/images/foo-bar-identity-th.jpg
 
-
+  
 sidebar:
   - title: "Role"
-    image: # http://placehold.it/350x250
+    image: http://placehold.it/350x250
     image_alt: "logo"
     text: "Designer, Front-End Developer"
-
-- title: "Responsibilities"
+  - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 
-
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-
+    
 
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
