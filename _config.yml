@@ -37,7 +37,7 @@ repository               : "yimsuson/yimsuson.github.io" # GitHub username/repo-
 # 아래와같이 링크를 기재하면 그림이 표시된다.
 # ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg    )
 
-teaser                   : teaser: /assets/images/500x300.png # 게시글아래에 사진 ex) "/assets/images/profilephoto.jpeg" 
+teaser                   : "/assets/images/500x300.png" # 게시글아래에 사진 ex) "/assets/images/profilephoto.jpeg" 
 logo                     : ## 최상단 메뉴 바에 사이트 로고 넣기  path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
