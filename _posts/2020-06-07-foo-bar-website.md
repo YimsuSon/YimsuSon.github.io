@@ -15,7 +15,7 @@ sidebar:
     text: "Reuters try PR stupid commenters should isn't a business model"
 
     
-
+ 
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
