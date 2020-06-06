@@ -7,15 +7,14 @@ header:
 
 
 sidebar:
-  
   - title: "Role"
     image: http://placehold.it/350x250
     image_alt: "logo"
     text: "Designer, Front-End Developer"
-  
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 
+docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
@@ -40,25 +39,6 @@ sidebar:
       - title: "Layouts"
         url: /docs/layouts/
 
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
 
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
