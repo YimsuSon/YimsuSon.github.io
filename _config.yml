@@ -30,7 +30,7 @@ description              : "Yimsu website."
 
 url                      : "https://yimsuson.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : yimsuson/yimsuson.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "yimsuson/yimsuson.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
 
 # 예로, markdown에서 bio-photo-keyboard.jpg 파일을 보여주고 싶다면, 
