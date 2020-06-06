@@ -8,7 +8,7 @@ header:
   
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: # http://placehold.it/350x250
     image_alt: "logo"
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"
@@ -27,6 +27,33 @@ gallery:
     image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
     
+
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /docs/configuration/
+      - title: "Navigation"
+        url: /docs/navigation/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/
+
 ---
 
 ## 블로그 가즈아~!
