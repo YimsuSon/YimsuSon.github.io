@@ -279,7 +279,7 @@ whitelist:
 # 주석 처리하면 블로그에서 더 이상 카테고리와 태그 목록을 표시하지 않는다.
 category_archive:
   type: liquid
-  path: /categories/
+  #path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
