@@ -358,10 +358,7 @@ defaults:
 # or "master" otherwise
 
 
-
-
 collections:
-  portfolio:
+  authors:
+    title: Authors
     output: true
-    permalink: /:collection/:path/
-
