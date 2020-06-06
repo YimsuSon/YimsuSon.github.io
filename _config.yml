@@ -121,7 +121,7 @@ analytics:
 # Site Author
 author:
   name             : "Yimsu Blog"
-  avatar           : "/assets/images/profilephoto.jpeg"
+  avatar           : "/assets/images/profilephoto.jpeg" # 동그란원 안에사진
   bio              : "Stay hungry"
   location         : "republic Korea"
   email            : 
