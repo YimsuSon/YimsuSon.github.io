@@ -23,7 +23,7 @@ main:
   - title: "Search"
     url: /search/
 
-  - description
+  #- description
   #- title: "Profile"
   #  url: /profile/
 
