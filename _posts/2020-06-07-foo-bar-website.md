@@ -1,5 +1,5 @@
 ---
-title: "Foo Bar Identity"
+title: "좌측 메뉴 구성 및 전체 블로그 레이아웃설정"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
   image: /assets/images/foo-bar-identity.jpg
