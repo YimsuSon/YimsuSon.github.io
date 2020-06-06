@@ -7,8 +7,8 @@ main:
     url: /about/
   - title: "Category"
     url: /categories/
-  - title: "Profile"
-    url: /categories/
+  #- title: "Profile"
+  #  url: /profile/
 
   # - title: "Sample Posts"
   #   url: /year-archive/
