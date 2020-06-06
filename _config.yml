@@ -125,6 +125,11 @@ author:
   bio              : "Stay hungry"
   location         : "republic Korea"
   email            : 
+  
+  sidebar:
+  - title: "Role"
+    nav: sidebar-sample  
+
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

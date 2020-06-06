@@ -59,14 +59,14 @@ main:
 #         url: /docs/layouts/
 
 
-defaults:
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
+# defaults:
+#   # _docs
+#   - scope:
+#       path: ""
+#       type: docs
+#     values:
+#       sidebar:
+#         nav: "docs"
 
 
 
