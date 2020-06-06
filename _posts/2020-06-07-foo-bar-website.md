@@ -19,7 +19,7 @@ sidebar:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+          url: /docs/quick-start-guide/
       - title: "Structure"
         url: /docs/structure/
       - title: "Installation"
