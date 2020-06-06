@@ -277,9 +277,9 @@ whitelist:
 # 포스트 글의 하단부분에 카테고리, 태그 링크들이있다
 #_config.yml 파일에 보면 이에 대한 설정이 있다. category_archive, tag_archive 설정 부분을
 # 주석 처리하면 블로그에서 더 이상 카테고리와 태그 목록을 표시하지 않는다.
-#category_archive:
-  #type: liquid
-  #path: /categories/
+category_archive:
+  type: liquid
+  path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
