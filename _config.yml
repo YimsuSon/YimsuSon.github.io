@@ -29,7 +29,7 @@ description              : "Yimsu website."
 # <{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
 
 url                      : "https://yimsuson.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "https://yimsuson.github.io" # the subpath of your site, e.g. "/blog"
+baseurl                  : #"https://yimsuson.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "yimsuson/yimsuson.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
 
@@ -308,7 +308,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
@@ -318,10 +318,8 @@ defaults:
       share: true
       related: true
 
-
   # 테마에 포함되어 있던 Docs 폴더의 _config.yml을 참고하여 _pages 폴더를 만들고 그 폴더에 대한 출력 방법을 정의 했습니다.
   # _pages
-
   - scope:
       path: "_pages"
       type: pages
