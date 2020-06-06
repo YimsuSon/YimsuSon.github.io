@@ -330,7 +330,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-
+  
+  
+      # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 
 # Travis-ci 를 사용하기 위해 추가한 부분입니다.
