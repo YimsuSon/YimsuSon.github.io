@@ -58,5 +58,15 @@ docs:
       - title: "Layouts"
         url: /docs/layouts/
 
+
 sidebar:
   nav: "docs"
+
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
