@@ -38,7 +38,7 @@ repository               : "yimsuson/yimsuson.github.io" # GitHub username/repo-
 # ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg    )
 
 teaser                   : "/assets/images/profilephoto.jpeg"
-logo                     : "/assets/images/profilephoto.jpeg" ## 최상단 메뉴 바에 사이트 로고 넣기  path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : ## 최상단 메뉴 바에 사이트 로고 넣기  path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200 #read time을 계산하기 위한 분당 읽는 글자수 입니다.
@@ -124,7 +124,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : #
   location         : "republic Korea"
-  email            : 
+  #email            : 
 
   
     links:
