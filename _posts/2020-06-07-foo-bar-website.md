@@ -8,13 +8,14 @@ header:
 
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: # http://placehold.it/350x250
     image_alt: "logo"
     text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
+
+- title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 
-docs:
+
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
