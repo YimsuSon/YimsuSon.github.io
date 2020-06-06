@@ -21,11 +21,24 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yimsu"
 description              : "Yimsu website."
+
+# markdown의 본문에 본인 블로그의 링크를 기재할 경우 
+# https://devinlife.com 과 같이 직접 경로를 지정하지 말고, 
+# {{ site.url }}를 기반으로 표현하자. 이렇게 하는 이유는 커스텀 도메인을 등록하거나
+# 도메인을 변경할 일이 발생하면 markdown의 기재해둔 링크 주소가 _config.yml 파일의 수정으로 모두 변경된다.
+# <{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
+
 url                      : "https://yimsuson.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : yimsuson/yimsuson.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+
+
+# 예로, markdown에서 bio-photo-keyboard.jpg 파일을 보여주고 싶다면, 
+# 아래와같이 링크를 기재하면 그림이 표시된다.
+# ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg    )
+
+teaser                   : "/assets/images/profilephoto.jpeg"
+logo                     : ## 최상단 메뉴 바에 사이트 로고 넣기  path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200 #read time을 계산하기 위한 분당 읽는 글자수 입니다.
@@ -109,7 +122,7 @@ analytics:
 author:
   name             : "Yimsu Blog"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The bird fights its way out of egg. The egg is the word. Who would be born must destroy a world. The bird flies to God. That God is Abraxax"
+  bio              : #
   location         : "republic Korea"
   email            : 
 
