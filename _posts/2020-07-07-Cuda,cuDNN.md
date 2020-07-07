@@ -129,11 +129,9 @@ python -m ipykernel install --user --name tf2.0-gpu --display-name "tf-gpu"
 
 pip install tensor flow-gpu==2.2.0
 
-conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
+conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch   
 
-``` c .md
-===
-===
+``` c
 
 
 ```
