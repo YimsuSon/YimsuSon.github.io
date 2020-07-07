@@ -109,7 +109,9 @@ Cuda 와 cuDNN 설치기
 - 구글에서 cuDNN 7.6.0 을 다운받은 후 압축을 해제한다
 - Programfile -> Nvidia GPU Cumputing ToolKit -> Cuda -> 10.0 을 열어보면 bin,includ lib 폴더들이있다. 압축을 해제한 폴더안의 파일을 동일한 폴더의 파일에 덮어쓰기를 한다
 
-#    
+
+---
+   
 
 여기까지가 기본적인 cuda 와 cuDNN의 설치과정이다
 
@@ -117,7 +119,7 @@ Cuda 와 cuDNN 설치기
 
 
 
-```c  .md
+``` c  .md
 
 conda activate tf2.0-gpu
 
@@ -130,6 +132,7 @@ pip install tensor flow-gpu==2.2.0
 conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 
 ```  
+
 
 ```
 
