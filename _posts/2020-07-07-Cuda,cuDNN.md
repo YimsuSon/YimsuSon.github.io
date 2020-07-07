@@ -119,7 +119,7 @@ Cuda 와 cuDNN 설치기
 
 
 
-```
+```c
 
 conda activate tf2.0-gpu
 
