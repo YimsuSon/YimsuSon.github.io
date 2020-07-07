@@ -134,7 +134,8 @@ conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 ```
 <br/>
 
-<br/>
+<br/>  
+```
 
 아나콘다 프롬프를 실행후 tf2.0-gpu라는 이름의 가상환경을 만듭니다
 
@@ -143,6 +144,7 @@ conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 가상환경이 설치된 환경에서 tf 2.2.0을 설치해줍니다
 
 cuda10.0과 맞는 pytorch 를 설치해줍니다. 
+```
 
 
 
