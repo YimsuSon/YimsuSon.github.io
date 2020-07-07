@@ -49,6 +49,9 @@ categories:
 Cuda 와 cuDNN 설치기
 
 
+<br/>
+
+<br/>  
 
 적용 버전 = Window10, NVIDIA GeForce GTX 1080
 
@@ -62,6 +65,12 @@ Cuda 와 cuDNN 설치기
 6. CuDNN 7.6.0 설치
 
 
+<br/>
+
+<br/>  
+<br/>
+
+<br/>  
 
 
 
@@ -71,6 +80,9 @@ Cuda 와 cuDNN 설치기
 
 - 화면에서 F8을 눌러 디스크를 선택하여 재설치를 진행한다
 - 모든 파티션을 다 삭제
+<br/>
+
+<br/>  
 
 
 
@@ -80,6 +92,9 @@ Cuda 와 cuDNN 설치기
 
 - 3dp chip 또는 Nvidia 공식홈페이지에 접속하여 그래픽드라이버 설치프로그램을 다운받는다
 
+<br/>
+
+<br/>  
 
 
 ### 3. Visual Code 2017 설치
@@ -87,6 +102,9 @@ Cuda 와 cuDNN 설치기
 - 구글에서 visual Code 2017 을 검색 후 설치한다
 - C++을 설치하는 패키지를 선택하여 설치를 진행한다 ( cuda 설치시 요구하기 때문에 미리 설치)
 
+<br/>
+
+<br/>  
 
 
 ### 4. Anaconda  설치
@@ -96,12 +114,18 @@ Cuda 와 cuDNN 설치기
 
 *2020 년 버전의 경우 업데이트가 되어있으므로 prompt에서 따로 업데이트를 해줄경우 충돌이 발생한다
 
+<br/>
+
+<br/>  
 
 
 ### 5. Cuda 10.0 설치
 
 - 구글에서 cuda를 검색하여 다운로드 받는다 이때 10.1 버전을 설치시 호환이 되지않으므로 10.0을 설치한다
 
+<br/>
+
+<br/>  
 
 
 ### 6. cuDNN 설치
@@ -112,10 +136,16 @@ Cuda 와 cuDNN 설치기
 
 ---
    
+<br/>
+
+<br/>  
 
 여기까지가 기본적인 cuda 와 cuDNN의 설치과정이다
 
 다음으로 추가적으로 tensorflow-gpu의 설치를 코드들을 정리한다
+<br/>
+
+<br/>  
 
 
 
@@ -135,7 +165,7 @@ conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 <br/>
 
 <br/>  
-```
+
 
 아나콘다 프롬프를 실행후 tf2.0-gpu라는 이름의 가상환경을 만듭니다
 
@@ -144,7 +174,6 @@ conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 가상환경이 설치된 환경에서 tf 2.2.0을 설치해줍니다
 
 cuda10.0과 맞는 pytorch 를 설치해줍니다. 
-```
 
 
 
