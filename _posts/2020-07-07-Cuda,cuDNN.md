@@ -1,6 +1,6 @@
 ---
-title: "기본 포스트 레이아웃 모음"
-excerpt: "기본 레이아웃"
+title: "Cuda 와 cuDNN 설치"
+excerpt: "Cuda 와 cuDNN 설치, tensorflowgpu와 pytorch호환버전"
 
 
 #최상위 사진
