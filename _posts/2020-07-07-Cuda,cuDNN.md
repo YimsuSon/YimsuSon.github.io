@@ -128,7 +128,7 @@ Cuda 와 cuDNN 설치기
 <br/>  
 
 
-### 6. cuDNN 설치
+### 6. cuDNN 설치 ###
 
 - 구글에서 cuDNN 7.6.0 을 다운받은 후 압축을 해제한다
 - Programfile -> Nvidia GPU Cumputing ToolKit -> Cuda -> 10.0 을 열어보면 bin,includ lib 폴더들이있다. 압축을 해제한 폴더안의 파일을 동일한 폴더의 파일에 덮어쓰기를 한다
