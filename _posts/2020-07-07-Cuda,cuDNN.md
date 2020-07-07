@@ -74,7 +74,7 @@ Cuda 와 cuDNN 설치기
 
 
 
-<h2> 1. 윈도우 10 재설치 </h2>
+### 1. 윈도우 10 재설치
 
 - USB에 윈도우이미지를 넣고 del 키 또는 F2 를 눌러 바이오스 화면으로 진입
 
@@ -88,7 +88,7 @@ Cuda 와 cuDNN 설치기
 
 
 
-<h2> 2. 그래픽 카드 설치 </h2>
+### 2. 그래픽 카드 설치
 
 - 3dp chip 또는 Nvidia 공식홈페이지에 접속하여 그래픽드라이버 설치프로그램을 다운받는다
 
@@ -97,7 +97,7 @@ Cuda 와 cuDNN 설치기
 <br/>  
 
 
-<h2> 3. Visual Code 2017 설치 </h2>
+### 3. Visual Code 2017 설치
 
 - 구글에서 visual Code 2017 을 검색 후 설치한다
 - C++을 설치하는 패키지를 선택하여 설치를 진행한다 ( cuda 설치시 요구하기 때문에 미리 설치)
@@ -107,7 +107,7 @@ Cuda 와 cuDNN 설치기
 <br/>  
 
 
-<h2> 4. Anaconda  설치 </h2>
+### 4. Anaconda  설치
 
 - 구글에서 anaconda download 를 검색하여 2020 버전을 다운받는다
 - next를 누르면 설치를 진행하다 Path 부분의 체크박스를 클릭하여 설치한다
@@ -119,7 +119,7 @@ Cuda 와 cuDNN 설치기
 <br/>  
 
 
-<h2> 5. Cuda 10.0 설치 </h2>
+### 5. Cuda 10.0 설치
 
 - 구글에서 cuda를 검색하여 다운로드 받는다 이때 10.1 버전을 설치시 호환이 되지않으므로 10.0을 설치한다
 
@@ -128,7 +128,7 @@ Cuda 와 cuDNN 설치기
 <br/>  
 
 
-<h2> 6. cuDNN 설치 </h2>
+### 6. cuDNN 설치
 
 - 구글에서 cuDNN 7.6.0 을 다운받은 후 압축을 해제한다
 - Programfile -> Nvidia GPU Cumputing ToolKit -> Cuda -> 10.0 을 열어보면 bin,includ lib 폴더들이있다. 압축을 해제한 폴더안의 파일을 동일한 폴더의 파일에 덮어쓰기를 한다
