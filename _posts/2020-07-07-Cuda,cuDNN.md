@@ -131,10 +131,9 @@ pip install tensor flow-gpu==2.2.0
 
 conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch   
 
-``` c
-
-
 ```
+
+
 
 아나콘다 프롬프를 실행후 tf2.0-gpu라는 이름의 가상환경을 만듭니다
 
@@ -144,7 +143,7 @@ conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 
 cuda10.0과 맞는 pytorch 를 설치해줍니다. 
 
-```
+
 
 
 
