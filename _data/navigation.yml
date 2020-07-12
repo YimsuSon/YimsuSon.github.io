@@ -76,7 +76,7 @@ sidebar-sample:
   - title: "CS"
     children:
       - title: "IOS_Dev"
-        url: /
+        url: /categories/#ai
       - title: "Ai"
         url: /yimsuson.github.io/categories/
       - title: "Paper"
