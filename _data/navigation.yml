@@ -80,9 +80,10 @@ sidebar-sample:
       - title: "Ai"
         url: /
       - title: "Paper"
-        url: /About/
+        url: /categories/
       - title: "CS"
         url: /
+
   - title: "Daily"
     children:
       - title: "Happy's Diary"
