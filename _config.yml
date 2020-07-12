@@ -28,7 +28,7 @@ description              : "Yimsu website."
 # 도메인을 변경할 일이 발생하면 markdown의 기재해둔 링크 주소가 _config.yml 파일의 수정으로 모두 변경된다.
 # <{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
 
-url                      : "https://yimsuson.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://yimsuson.github.io/categories/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : #"https://yimsuson.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "yimsuson/yimsuson.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
