@@ -82,7 +82,7 @@ sidebar-sample:
       - title: "Paper"
         url: "https://yimsuson.github.io/categories/"
       - title: "CS"
-        url: /
+        url: https://yimsuson.github.io/categories/
 
   - title: "Daily"
     children:
