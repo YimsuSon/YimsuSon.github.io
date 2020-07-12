@@ -37,7 +37,7 @@ toc_icon: "cog"
 ## 테그설정
 tags: "blog"
 categories:
-
+  - Ai
 ---
 
 # Cuda 10.0, cuDNN, tensorflow-gpu, python 설치 및 호환버전
