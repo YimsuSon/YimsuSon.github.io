@@ -81,6 +81,8 @@ sidebar-sample:
         url: /
       - title: "Paper"
         url: /
+      - title: "CS"
+        url: /
   - title: "Daily"
     children:
       - title: "Happy's Diary"
