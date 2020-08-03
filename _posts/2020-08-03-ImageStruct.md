@@ -23,7 +23,7 @@ gallery:
 
  #사이드바 설정 
 sidebar:
-  - title: "Role"
+  - title: "Category"
     nav: sidebar-sample
 
 # 해당 글 목차
