@@ -30,7 +30,7 @@ sidebar:
 toc: true
 toc_sticky: true
 
-toc_label: "Grammer"
+toc_label: "Ai"
 toc_icon: "cog"
 
 
