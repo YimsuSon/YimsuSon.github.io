@@ -30,15 +30,16 @@ sidebar:
 toc: true
 toc_sticky: true
 
-toc_label: "CS"
+toc_label: "Grammer"
 toc_icon: "cog"
 
 
 ## 테그설정
-tags: "vision"
+tags: "blog"
 categories:
-  - CS
+  - Ai
 ---
+
 
 
 
