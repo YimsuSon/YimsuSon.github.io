@@ -1,4 +1,3 @@
-
 ---
 title: Image Structure
 excerpt: -
