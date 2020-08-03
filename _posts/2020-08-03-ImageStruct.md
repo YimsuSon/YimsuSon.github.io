@@ -1,6 +1,6 @@
 ---
 title: Image Structure
-excerpt: -
+excerpt: 이미지 구조 
 
 
 #최상위 사진
