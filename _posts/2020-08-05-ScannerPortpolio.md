@@ -46,6 +46,11 @@ categories:
 <br/>
 <img src="https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#">
 
+
+![Before](https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#)
+
+
+
 휴대폰에서 "Hello, World! I'm Hanul Son" 이라는 문구를 적은
 
 종이부분을 4각형 지점을 선택하면 영역 내부의 글씨를 스캔하는 스캐너를 만들어 보았습니다.
