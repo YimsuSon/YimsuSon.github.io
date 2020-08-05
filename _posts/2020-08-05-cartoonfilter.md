@@ -58,7 +58,7 @@ categories:
 이 영상에 카툰 필터를 적용
 <br/>
 
-![image](/assets/images/portfolio/filter2.png)
+![image](/assets/images/portfolio/filter3.png)
 <br/>
 <br/>
 스케치 효과 필터를 적용
