@@ -44,10 +44,6 @@ categories:
 
 <br/>
 <br/>
-<img src="https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#">
-
-
-[![before](https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#)]
 
 ![image](/assets/images/portfolio/scaner1.jpeg)
 
@@ -58,7 +54,8 @@ categories:
 <br/>
 
 <br/>
-<img src="https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#">
+
+![image](/assets/images/portfolio/scaner2.png)
 
 
 <br/>
