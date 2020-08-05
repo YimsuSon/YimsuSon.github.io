@@ -47,7 +47,7 @@ categories:
 <img src="https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#">
 
 
-![Before](https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#)
+![scaner1.jpeg](https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#)
 
 ![image](/assets/images/portfolio/scaner1.jpeg)
 
