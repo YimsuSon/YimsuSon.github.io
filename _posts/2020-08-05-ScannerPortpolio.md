@@ -49,7 +49,7 @@ categories:
 
 ![Before](https://blog.naver.com/PostView.nhn?blogId=hanulzzz&Redirect=View&logNo=222051879085&categoryNo=48&isAfterWrite=true#)
 
-
+![image](/assets/images/portfolio/scaner1)
 
 휴대폰에서 "Hello, World! I'm Hanul Son" 이라는 문구를 적은
 
