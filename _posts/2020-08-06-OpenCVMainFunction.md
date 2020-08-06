@@ -92,6 +92,7 @@ cv2.namedWindow(winname, flags=None) -> None
 - winname : the name of window (literal)
 - flag : select the flag of window attibute
 
+|---|---|
 |cv2.WINDOW_NORMAL|specify the video size to fit the window size|
 |cv2.WINDOW_AUTOSIZE|translate the window size to fit the video size |
 
@@ -134,6 +135,7 @@ cv2.imshow(winname,mat) -> None
 ```
 - winname : the name of window
 - mat : the data to show video data (numpy,ndarray)
+<br/>
 ** Note <br/>
     - If the case is unit16, int32,divide the matrix element value by 255 and print them out.
     - If the case is float32, float64,multiply the matrix element value by 255 and print them out.
@@ -146,12 +148,13 @@ cv2.waitKey(delay=None) -> retval
 
 - delay : the waiting time (e.g) delay <= 0, wait forever.  delfault value is 0
 - retval : pressed key value. (if not, the value is -1) 
-
+<br/>
 ** Note <br/>
-    -Main special key code :  27(ESC)  , 13(ENTER), 9(TAB)
-    -Use ord() function to check the input of specific key
-    ``` c
+    - Main special key code :  27(ESC)  , 13(ENTER), 9(TAB)
+    
+    - Use ord() function to check the input of specific key
+``` c
     while True:
         if cv.waitKey() == ord('q'):
             break
-    ```
+```
