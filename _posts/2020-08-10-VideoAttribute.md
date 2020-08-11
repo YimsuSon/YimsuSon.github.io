@@ -49,6 +49,7 @@ categories:
 ### 1. Open CV express the video data to use numpy.ndarray
 
 |-|
+|-|
 |import cv2 <br/> img1 = cv2.imread('cat.bmp',cv2.IMREAD_GRAYSCALE) <br/> img2 = cv2.imread('cat.bmp',cv2.IMREAD_COLOR)|
 
 - ndim : the number of dimension. = len(img.shape)
