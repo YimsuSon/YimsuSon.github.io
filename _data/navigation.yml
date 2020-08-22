@@ -19,9 +19,9 @@ main:
 
   #- title: "Collections"
   #  url: /collection-archive/
-
-  - title: "Search"
-    url: /search/
+  
+  #- title: "Search"
+  #  url: /search/
 
   #- description
   #- title: "Profile"
