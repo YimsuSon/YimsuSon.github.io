@@ -10,4 +10,4 @@ layout: single
 
 CV
 
-2020 - Sejong University Computer engineering Master degree
+2020 - S University Computer engineering Master degree
