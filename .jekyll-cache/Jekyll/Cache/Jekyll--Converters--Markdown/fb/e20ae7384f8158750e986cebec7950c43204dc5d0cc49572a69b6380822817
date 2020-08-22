@@ -1,0 +1,156 @@
+I"S<h3 id="open-cv-main-function-description">Open CV Main Function Description</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1opencv-api-searching">1.OpenCV Api searching</h3>
+
+<link />
+<p>(https://docs.opencv.org/master/)</p>
+
+<p><br /></p>
+
+<h3 id="2load-video-file">2.Load Video file</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<ul>
+  <li>filename : the name loading video (literal)</li>
+  <li>flags : the option flag loading video</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>function</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cv2.IMREAD_COLOR</td>
+      <td>Read as BGR color video <br /> shape = (rows,cols,3)</td>
+    </tr>
+    <tr>
+      <td>cv2.IMREAD_GRAYSCALE</td>
+      <td>Read as Gray scale <br /> shape = (rows,cols)</td>
+    </tr>
+    <tr>
+      <td>cv2.IMREAD_UNCHANGED</td>
+      <td>Read as original video property <br /> (e.g) transparent file shape = (rows,cols,4)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>retval : the video data loaded (numpy.ndarray)</li>
+</ul>
+
+<h3 id="3save-video-file">3.Save Video file</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+<ul>
+  <li>filename : the name to save video (literal)</li>
+  <li>img : image data to be saved (numpy.ndarray)</li>
+  <li>params : select option to save file ( integer of attribute &amp; value ) <br /> e.g) [cv.IMWRITE_JPEG_QUALITY,90] : specify the compression ratio as 90%</li>
+</ul>
+
+<p>-retval : If save is successful, it is True. If save is  fail, it is False.</p>
+
+<h3 id="4open-the-new-window">4.Open the new window</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="n">winname</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+<ul>
+  <li>winname : the name of window (literal)</li>
+  <li>flag : select the flag of window attibute</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cv2.WINDOW_NORMAL</td>
+      <td>specify the video size to fit the window size</td>
+    </tr>
+    <tr>
+      <td>cv2.WINDOW_AUTOSIZE</td>
+      <td>translate the window size to fit the video size</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="5close-the-widdow">5.CLose the widdow</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">destroyWindow</span><span class="p">(</span><span class="n">winname</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">destroyAllWindows</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+<ul>
+  <li>winname : the name of window you want to close</li>
+</ul>
+
+<p>** cv2.destroyWindow() just close a window, <br /> cv2.destroyAllWindows() close all window.</p>
+
+<h3 id="6move-the-window">6.Move the window</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">moveWindow</span><span class="p">(</span><span class="n">winname</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+
+<ul>
+  <li>winname : the name of window</li>
+  <li>x,y : the position coordinate to move</li>
+</ul>
+
+<h3 id="7resize-the-window">7.Resize the window</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="n">winname</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">height</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+
+<ul>
+  <li>winname : the name of window</li>
+  <li>width : the horizontal size of window to change</li>
+  <li>height : the vertical size of window to change</li>
+</ul>
+
+<h3 id="8show-the-window">8.Show the window</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">winname</span><span class="p">,</span><span class="n">mat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+<ul>
+  <li>winname : the name of window</li>
+  <li>mat : the data to show video data (numpy,ndarray)
+<br />
+** Note <br />
+    <ul>
+      <li>If the case is unit16, int32,divide the matrix element value by 255 and print them out.</li>
+      <li>If the case is float32, float64,multiply the matrix element value by 255 and print them out.</li>
+      <li>Actually, the image appears on screen only when cv2.waitKey() function is called.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="9wait-keyboard-input">9.Wait Keyboard input</h3>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="n">delay</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<ul>
+  <li>delay : the waiting time (e.g) delay &lt;= 0, wait forever.  delfault value is 0</li>
+  <li>retval : pressed key value. (if not, the value is -1) 
+<br />
+** Note <br />
+    <ul>
+      <li>
+        <p>Main special key code :  27(ESC)  , 13(ENTER), 9(TAB)</p>
+      </li>
+      <li>
+        <p>Use ord() function to check the input of specific key</p>
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">while</span> <span class="n">True</span><span class="o">:</span>
+  <span class="k">if</span> <span class="n">cv</span><span class="p">.</span><span class="n">waitKey</span><span class="p">()</span> <span class="o">==</span> <span class="n">ord</span><span class="p">(</span><span class="sc">'q'</span><span class="p">)</span><span class="o">:</span>
+      <span class="k">break</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

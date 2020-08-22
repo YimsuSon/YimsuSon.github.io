@@ -1,0 +1,46 @@
+I"�<h3 id="꽃-이미지에서-색깔을-k-값에-따라-추출">꽃 이미지에서 색깔을 K 값에 따라 추출</h3>
+
+<p><br />
+<br /></p>
+
+<p>원본 사진
+<br /></p>
+
+<p><img src="/assets/images/portfolio/k.jpeg" alt="image" /></p>
+
+<p><br />
+<br /></p>
+
+<p>K값을 0로 설정하였을 경우
+<br /></p>
+
+<p><img src="/assets/images/portfolio/k0.png" alt="image" />
+<br />
+<br /></p>
+
+<p>K값을 1로 설정하였을 경우
+<br /></p>
+
+<p><img src="/assets/images/portfolio/k1.png" alt="image" /></p>
+
+<p><br />
+<br /></p>
+
+<p>K값을 3으로 설정하였을 경우
+<br /></p>
+
+<p><img src="/assets/images/portfolio/k3.png" alt="image" /></p>
+
+<p><br />
+<br /></p>
+
+<p>K값을 8로 설정하였을 경우
+<br /></p>
+
+<p><img src="/assets/images/portfolio/k8.png" alt="image" /></p>
+
+<p><br />
+<br /></p>
+
+<iframe width="1000" height="625" src="https://www.youtube.com/embed/k-cfB-w19Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

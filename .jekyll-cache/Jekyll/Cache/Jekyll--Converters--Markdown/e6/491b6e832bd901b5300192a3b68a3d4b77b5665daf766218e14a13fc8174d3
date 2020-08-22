@@ -1,0 +1,22 @@
+I"%<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">항목</th>
+      <th style="text-align: center">가격</th>
+      <th style="text-align: left">개수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">라면</td>
+      <td style="text-align: center">800원</td>
+      <td style="text-align: left">10개</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">과자</td>
+      <td style="text-align: center">900원</td>
+      <td style="text-align: left">20개</td>
+    </tr>
+  </tbody>
+</table>
+:ET

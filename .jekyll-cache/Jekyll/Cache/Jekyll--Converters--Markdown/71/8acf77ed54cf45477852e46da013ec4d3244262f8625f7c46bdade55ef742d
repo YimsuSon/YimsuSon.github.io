@@ -1,0 +1,25 @@
+I"�<h3 id="휴대폰-카메라로-촬영한-사진에서-종이를-추출하는-스캐너-만들기">휴대폰 카메라로 촬영한 사진에서 종이를 추출하는 스캐너 만들기</h3>
+
+<p><br />
+<br /></p>
+
+<p><img src="/assets/images/portfolio/scaner1.jpeg" alt="image" /></p>
+
+<p>휴대폰에서 “Hello, World! I’m Hanul Son” 이라는 문구를 적은</p>
+
+<p>종이부분을 4각형 지점을 선택하면 영역 내부의 글씨를 스캔하는 스캐너를 만들어 보았습니다.</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><img src="/assets/images/portfolio/scaner2.png" alt="image" /></p>
+
+<p><br />
+향후 왜곡 보정 부분을 추가하게 된다면 일반 책을 스캔하는것도 가능합니다.</p>
+
+<p><br /></p>
+
+<iframe width="1026" height="625" src="https://www.youtube.com/embed/usKZMB1Zxlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET

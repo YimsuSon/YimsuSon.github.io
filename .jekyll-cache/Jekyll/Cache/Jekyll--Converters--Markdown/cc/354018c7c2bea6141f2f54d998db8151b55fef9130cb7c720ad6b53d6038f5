@@ -1,0 +1,39 @@
+I"9	<h3 id="specific-color-area-extraction">Specific color area extraction</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-detection-matrix-elements-in-specific-range">1. Detection matrix elements in specific range</h3>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">src</span><span class="p">,</span><span class="n">lowerb</span><span class="p">,</span><span class="n">upperb</span><span class="p">,</span><span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src : input matrix</li>
+  <li>lowerb : lower bound matrix or scalar</li>
+  <li>upperb : upper bound matrix or scalar</li>
+  <li>dst : mask video of same size as input video</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="2-histogram-backprojection">2. Histogram backprojection</h3>
+
+<ul>
+  <li>The method that check how much the histogram model given by each pixel of video matchs.</li>
+</ul>
+
+<p>1) Calculate specific color histogram from standart video and mask video.
+2) Select the pixel corresponded to specific color histogram that calculated pre-acuired color.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">calcBackProject</span><span class="p">(</span><span class="n">images</span><span class="p">,</span><span class="n">channels</span><span class="p">,</span><span class="n">hist</span><span class="p">,</span><span class="n">ranges</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>images : input video list</li>
+  <li>channels : channels number list to use backprojection calculate</li>
+  <li>hist : input histogram (numpy. ndarray)</li>
+  <li>ranges : list composisted to max value and min value from each dimension histogram</li>
+  <li>scale : additionally multiple value to output backproject matrix</li>
+  <li>dst : output backprojection video</li>
+</ul>
+:ET

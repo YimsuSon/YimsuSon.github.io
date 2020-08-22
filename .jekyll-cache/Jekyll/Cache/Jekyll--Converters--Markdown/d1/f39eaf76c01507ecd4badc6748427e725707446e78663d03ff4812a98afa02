@@ -1,0 +1,83 @@
+I"�	<h3 id="attribute-of-video-and-reference-pixel-value">Attribute of Video and reference pixel value</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-open-cv-express-the-video-data-to-use-numpyndarray">1. Open CV express the video data to use numpy.ndarray</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>import cv2 <br /> img1 = cv2.imread(‘cat.bmp’,cv2.IMREAD_GRAYSCALE) <br /> img2 = cv2.imread(‘cat.bmp’,cv2.IMREAD_COLOR)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>ndim : the number of dimension. = len(img.shape)</li>
+  <li>shape : the size of each dimension. * Grayscale = (h,w), Colorscale = (h,w,3)</li>
+  <li>size : Total number of elements</li>
+  <li>dytp : Data type of elements. ex) Video data is uint8</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="2-opencv-data-type-and-numpy-data-type">2. OpenCV data type and Numpy data type</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cv.CV_8U</td>
+      <td>numpy.unint8</td>
+      <td>8-bit unsigned integer</td>
+    </tr>
+    <tr>
+      <td>cv.CV_16S</td>
+      <td>numpy.int16</td>
+      <td>16-bit signed integer</td>
+    </tr>
+    <tr>
+      <td>cv.CV_32F</td>
+      <td>numpy.float32</td>
+      <td>32-bit floating point</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Grayscale Video : cv2.CV_8UC1 -&gt; numpy.uint8, shape = (h,w)</li>
+  <li>Colorscale Video : cv2.CV_8UC1 -&gt; numpy.uint8, shape = (h,w,3)</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="3-mask-operation-and-roi">3. Mask Operation and ROI</h3>
+
+<ul>
+  <li>ROI
+    <ul>
+      <li>Region of Interest</li>
+      <li>Specific region that could special operation in the video.</li>
+    </ul>
+  </li>
+  <li>Mask Operation
+    <ul>
+      <li>OpenCV support ROI operaion to some of function when it do the mask Video should be converted.</li>
+      <li>Generally, Mask video is used through the binary image ,which is composed of 0 or 255.</li>
+    </ul>
+  </li>
+  <li>Pixel value copy function supporting mask operation.</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">copyTo</span><span class="p">(</span><span class="n">src</span><span class="p">,</span><span class="n">maks</span><span class="p">,</span><span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src : input video</li>
+  <li>mask : mask video</li>
+  <li>sdt : output layer</li>
+</ul>
+
+:ET

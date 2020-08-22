@@ -1,0 +1,43 @@
+I"�<p>GitHub Pages의 github.io 블로그 시작하기로 하였다. 블로그 계획을 한번 세워보았다. “&lt;h2&gt;,&lt;/h2&gt;” 태그로 제목을 쓰면 TOC 테이블로 오른쪽 사이드바에 보여줄 수 있다.</p>
+
+<h2> 1. 최신 기술 공부하기 </h2>
+<p>최신 기술에 대해 공부하고 블로그 글로 게시하자.</p>
+
+<h2> 2. 최신 뉴스 게시하기 </h2>
+<p>관심있는 뉴스가 나오면 사람들과 공유하고 의견을 나눠보자.</p>
+
+<h2> 3. 토이 프로젝트 소개하기Permalink</h2>
+<p>개인적으로 진행하는 토이 프로젝트를 진행해보고 결과를 소개해보자.</p>
+
+<h1 id="이미지-삽입">이미지 삽입</h1>
+
+<p><img src="https://devinlife.com/assets/images/bio-photo-keyboard-small.jpg" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">항목</th>
+      <th style="text-align: center">가격</th>
+      <th style="text-align: left">개수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">라면</td>
+      <td style="text-align: center">800원</td>
+      <td style="text-align: left">10개</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">과자</td>
+      <td style="text-align: center">900원</td>
+      <td style="text-align: left">20개</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul id="markdown-toc">
+  <li><a href="#이미지-삽입" id="markdown-toc-이미지-삽입">이미지 삽입</a></li>
+</ul>
+<p>My first paragraph.</p>
+
+:ET

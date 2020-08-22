@@ -1,0 +1,106 @@
+I")#<h3 id="arithmetic-operation-and-logic-operation-of-video">Arithmetic operation and logic operation of Video</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-addition-operation">1. Addition operation</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dst</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="n">saturate</span><span class="p">(</span><span class="n">src1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">+</span><span class="n">src2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+</code></pre></div></div>
+<ul>
+  <li>It Add the pixel value that exists on same position between two videos and Set the pixel value of video.</li>
+  <li>If the value is more than 255, set the pixel value to 255.</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">src2</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src1 : (input) first video or schalar</li>
+  <li>src2 : (input) second video or schalar</li>
+  <li>dst : (output) result video of addition operation</li>
+  <li>mask : mask video</li>
+  <li>dtype : type of output video</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="2-weighted-sum">2. Weighted sum</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dst</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="n">saturate</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">src1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">src2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>Calculating weighted sum about pixel value which exist same position of two video and Setting the pixel value of result video.</p>
+  </li>
+  <li>
+    <p>Genarlly, spacifiy a + b = 1  (Maintaing normal birghtness of two input video)</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="3-average-operation">3. Average operation</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dst</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">(</span><span class="n">src1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="n">src2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Setting the weight with a = b = 0.5</li>
+</ul>
+
+<p><br /></p>
+
+<p>Code of weighted sum</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">addWeighted</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">src2</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">gamma</span><span class="p">,</span><span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src1 : Frist video</li>
+  <li>alpha : Weight of first video</li>
+  <li>src2 : Second video ( same type &amp; same size with src1)</li>
+  <li>beta : Weight of second video</li>
+  <li>gamma : Additional added value to result value</li>
+  <li>dst : result vieo of weighted sum</li>
+  <li>dtype : type of output video(dst)</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="4-subtraction-operation">4. Subtraction operation</h3>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dst</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="o">|</span><span class="n">src1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">-</span> <span class="n">src2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<ul>
+  <li>It doesn’t be effected from order of input video</li>
+</ul>
+
+<p><br />
+Code of subtracion operation</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">src2</span><span class="p">,</span> <span class="n">dst</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">None</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src1 : first video</li>
+  <li>src2 : second video</li>
+  <li>dst : result video of subtraction operation</li>
+  <li>mask : mask video</li>
+  <li>dtype : type of output video</li>
+</ul>
+
+<h3 id="5-bit-unit-operation--and-or-xor-not">5. Bit unit operation ( AND, OR. XOR, NOT)</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">src2</span><span class="p">,</span> <span class="n">dst</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_or</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">src2</span><span class="p">,</span> <span class="n">dst</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_xor</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">src2</span><span class="p">,</span> <span class="n">dst</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+<span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_not</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span> <span class="n">dst</span> <span class="o">=</span> <span class="n">None</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>src1 : first video</li>
+  <li>src2 : second video</li>
+  <li>dst : result video</li>
+  <li>mask : mask video</li>
+</ul>
+
+:ET

@@ -76,7 +76,7 @@ search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : "VJ1HUFHMZZ"
-  index_name             : "blog"
+  index_name             : blog
   search_only_api_key    : "4bfc52799bb8d168cb76ec66a6c85d34"
   powered_by             : true # true (default), false
 google:

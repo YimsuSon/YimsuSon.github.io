@@ -1,0 +1,190 @@
+I"/<h3 id="process-video-and-camera">Process Video and Camera</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-cv2videocapture-class">1. cv.2VideoCapture Class</h3>
+
+<ul>
+  <li>cv.VideoCapture class could do the task that recieves the frame from cammer or video in OpenCV.</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="2-open-cammera">2. Open Cammera</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">apiPreference</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>index : camera_id + domain_offset_id (If you open the system basic cammer using the basic method,pass “0” to index. )</li>
+  <li>apiPrefence : Specified as prefered cammera processing method.</li>
+  <li>retval : cv2.VideoCapture object</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">apiPreference</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+
+</code></pre></div></div>
+<ul>
+  <li>retval : To success is True, To fail is False</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="3-open-video-stop-video-sequence-video-stream">3. open Video, Stop video sequence, Video stream</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">apiPreference</span> <span class="o">=</span> <span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>filename : Video file name, stop video sequence , video stream URL etc. ex) ‘video.avi’, ‘img_%02d.jpg’,’protocol://host:prot/scrpt?params</td>
+          <td>auth’</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>apiPreference : Specify as prefered cammera processing method</li>
+  <li>retval : cv2.VideoCapture object</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="n">apiPreference</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+
+</code></pre></div></div>
+<ul>
+  <li>retval : To success is True, To fail is False</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="4-check-the-video-capture">4. Check the Video capture</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">cv2</span><span class="p">.</span><span class="n">VideoCaptrue</span><span class="p">.</span><span class="n">isOpened</span><span class="p">()</span> <span class="o">-&gt;&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+<ul>
+  <li>retval : To success is True, To fail is False</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="5-recieve-the-frame">5. Recieve the frame</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span><span class="p">,</span> <span class="n">image</span>
+
+</code></pre></div></div>
+<ul>
+  <li>retval : To success is True, To fail is False</li>
+  <li>image : Current frame ( numpy.ndarray)</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="6-to-refer-cammera-video-device-property-value">6. To refer Cammera, Video device property value</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">propID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<ul>
+  <li>propID : property constant</li>
+</ul>
+
+<p>|—|—|
+|CAP_PROP_FRAME_WIDTH|frame horizontal size|
+|CAP_PROP_FRAME_HEIGHT|frame vertical size|
+|CAP_PROP_FPS|the number of frames per second|
+|—|—|</p>
+
+<p><br />
+<br /></p>
+
+<h3 id="7-cv2videowriter-class">7. cv2.VideoWriter class</h3>
+
+<ul>
+  <li>
+    <p>The frames are could saved as video file using cv.VideoWriter class in OpenCV.</p>
+  </li>
+  <li>
+    <p>Fourcc(four chracter code) : integer value defining codec of video file, method of compress, color, pixel</p>
+  </li>
+</ul>
+
+<p>|—|—|
+|cv2.VideoWriter_fourcc(<em>‘DIVX’)|DIVC MPEG-4 codec|
+|cv2.VideoWriter_fourcc(</em>‘XIVD’)|XCID MPEG-4 codec|
+|cv2.VideoWriter_fourcc(<em>‘FMP$’)|DDMPEG MPEG-4 codec|
+|cv2.VideoWriter_fourcc(</em>‘X264’)|G.264/AVC codec|
+|cv2.VideoWriter_fourcc(*‘MJPG’)|Motion-JPEG codec|
+|—|—|</p>
+
+<p><br />
+<br /></p>
+
+<h3 id="8-open-the-video-file-for-storage">8. open the video file for storage</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="n">frameSize</span><span class="p">,</span> <span class="n">isColor</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+
+</code></pre></div></div>
+<ul>
+  <li>filename : video file name</li>
+  <li>fourcc : fourcc ex) cv2.VideoWriter_fourcc(*‘DIVX’))</li>
+  <li>fps : the number of frame per second ex) 30</li>
+  <li>frame size : (width,height)</li>
+  <li>isColor : Color video is True</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">fourcc</span><span class="p">,</span> <span class="n">fps</span><span class="p">,</span> <span class="n">frameSie</span><span class="p">,</span> <span class="n">isColor</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h3 id="9-check-the-video-file">9. Check the video file</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">.</span><span class="n">isOpend</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<ul>
+  <li>save the frame
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">image</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div>    </div>
+  </li>
+  <li>image : To save frame (numpy.ndarray)</li>
+</ul>
+
+<h3 id="10-save-the-video-for-webcam-input">10. save the video for WebCam input</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
+<span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">round</span><span class="p">(</span><span class="n">cap</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="p">.</span><span class="n">CAP_PROP_FRAME_WIDTH</span><span class="p">))</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">round</span><span class="p">(</span><span class="n">cap</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">cv2</span><span class="p">.</span><span class="n">CAP_PROP_FRAME_HEIGHT</span><span class="p">))</span>
+
+<span class="n">fourcc</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="err">'</span><span class="n">DIVX</span><span class="err">'</span><span class="p">)</span> <span class="err">#</span> <span class="o">*</span><span class="err">'</span><span class="n">DIVX</span><span class="err">'</span> <span class="o">==</span> <span class="sc">'D'</span><span class="p">,</span><span class="sc">'I'</span><span class="p">,</span><span class="sc">'V'</span><span class="p">,</span><span class="sc">'X'</span> 
+
+<span class="n">out</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="err">'</span><span class="n">output</span><span class="p">.</span><span class="n">avi</span><span class="err">'</span><span class="p">,</span> <span class="n">fourcc</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">True</span><span class="o">:</span>
+    <span class="n">ret</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">cap</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+    
+    <span class="n">inversed</span> <span class="o">=</span> <span class="o">~</span><span class="n">frame</span> 
+    <span class="n">out</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">inversed</span><span class="p">)</span>
+    
+    <span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="err">'</span><span class="n">frame</span><span class="err">'</span><span class="p">,</span> <span class="n">frame</span><span class="p">)</span> 
+    <span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="err">'</span><span class="n">inversed</span><span class="err">'</span><span class="p">,</span> <span class="n">inversed</span><span class="p">)</span> 
+    
+    <span class="k">if</span> <span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">27</span><span class="o">:</span>
+        <span class="k">break</span>
+
+</code></pre></div></div>
+:ET

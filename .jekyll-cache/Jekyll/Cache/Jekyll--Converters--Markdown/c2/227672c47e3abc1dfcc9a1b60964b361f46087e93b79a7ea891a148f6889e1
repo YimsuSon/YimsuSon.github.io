@@ -1,0 +1,93 @@
+I"§<h3 id="handle-the-keyboard-task">Handle the keyboard Task</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-waiting-fuction-of-keyboard-input">1. Waiting fuction of keyboard input</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="n">delay</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">retval</span>
+</code></pre></div></div>
+
+<ul>
+  <li>delay : Waiting time ex) delay &lt;= 0 is infinite delay. defautl value is 0.</li>
+  <li>
+    <p>retval : Putted key (ASCII code). ex) if not key is putted,itâ€™s -1.</p>
+  </li>
+  <li>Note
+    <ul>
+      <li>cv2.waitKey() function opearates when OpenCV window is opened.</li>
+      <li>If you want to check the specific key press, you use the ord() function.
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">while</span> <span class="n">True</span><span class="o">:</span>
+  <span class="k">if</span> <span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">()</span> <span class="o">==</span> <span class="n">ord</span><span class="p">(</span><span class="sc">'q'</span><span class="p">)</span><span class="o">:</span>
+  <span class="k">break</span>
+</code></pre></div>        </div>
+        <p>*** Main special Key code : 27 (ESC), 13 (ENTER), 9 (TAB)</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="2-handle-the-mouse-event">2. Handle the mouse event</h3>
+
+<ul>
+  <li>the function that calls back the mouse event.</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">setMouseCallback</span><span class="p">(</span><span class="n">windowName</span><span class="p">,</span> <span class="n">onMouse</span><span class="p">,</span> <span class="n">param</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+
+<ul>
+  <li>windowName : Window name that mouse event handle.</li>
+  <li>onMouse : The callback function for handle mouse event.
+    <ul>
+      <li>It should follow like that frame
+        <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">onMouse</span><span class="p">(</span><span class="n">event</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">flags</span><span class="p">,</span><span class="n">param</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>param : data that pass to callback funtion</li>
+</ul>
+
+<h3 id="3-the-frame-that-handle-mouse-event-functioncallback-function">3. THe frame that handle mouse event function(callback function)</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">onMouse</span><span class="p">(</span><span class="n">event</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">flags</span><span class="p">,</span><span class="n">param</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">None</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>event : The sort of mouse event. ex) constant starting with cv.EVENT_FLAG</p>
+  </li>
+  <li>x : x coordination</li>
+  <li>y : y coordination</li>
+  <li>flags : The situation when break mouse event ex) constant starting with cv.EVENT_FLAG</li>
+  <li>param : The data that is setted from cv2.setMouseCallback() function.</li>
+</ul>
+
+<h3 id="4-the-method-how-to-check-the-operation-time">4. The method How to check the operation time</h3>
+
+<ul>
+  <li>
+    <p>Computer Vision generally handles high capacity data. So We should manage the final result through series of processes checking the operation time.</p>
+  </li>
+  <li>
+    <p>TickMeter class could check the operation time in OpenCV</p>
+  </li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">TickMeter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">tm</span>
+</code></pre></div></div>
+
+<ul>
+  <li>tm : cv2.TickMeter object</li>
+  <li>tm.start() : start time check</li>
+  <li>tm.stop() : stop time check</li>
+  <li>tm.reset() : initialize time check</li>
+  <li>tm.getTimeSec() : return the time check per second</li>
+  <li>tm.getTimeMilli() : return the time check per milli second</li>
+  <li>tm.getTimeMicro() : return the time check per micro second</li>
+</ul>
+:ET

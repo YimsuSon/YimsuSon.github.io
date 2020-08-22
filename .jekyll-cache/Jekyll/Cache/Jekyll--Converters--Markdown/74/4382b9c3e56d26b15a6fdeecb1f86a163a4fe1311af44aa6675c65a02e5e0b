@@ -1,0 +1,79 @@
+I"�<h3 id="1what-is-the-image">1.What is the image?</h3>
+
+<ul>
+  <li>
+    <p>The pixel is arraied on 2-dimension matrix which is composed of cross grid</p>
+  </li>
+  <li>
+    <p>Pixel = Basic unit , picture element</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="2-the-expression-method-of-image">2. The expression method of image</h3>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>grayscale image can show 0 ~ 255</p>
+  </li>
+  <li>
+    <p>True color image can show 0 ~ 255^3</p>
+  </li>
+  <li>
+    <p>Numpy.unit8 could express 1Byte of pixel value ex) ( 255)</p>
+  </li>
+  <li>
+    <p>Numpy.ndarray could express 3Byte of pixel value  ex) ( 255.255.255) or tuple</p>
+  </li>
+  <li>
+    <p>w x h coordinations is generally used in the image.</p>
+  </li>
+</ul>
+
+<h3 id="3-the-size-analysis-of-image-data">3. The size analysis of image data</h3>
+
+<p><br /></p>
+
+<ul>
+  <li>Gray scale image : ( w ) x ( h )  Bytes</li>
+  <li>True color image : ( w ) x ( h ) Bytes</li>
+</ul>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="4-the-feature-of-file-format">4. The feature of file format</h3>
+
+<p><br /></p>
+
+<ul>
+  <li>
+    <p>BMP : It directly save a file without compression</p>
+
+    <p>​		 : The file structure is simple, so it can program the file I/O without extra library help</p>
+  </li>
+  <li>
+    <p>JPG : It generally saves color images such as photos</p>
+
+    <p>​		: Lossly compression</p>
+
+    <p>​	    : It is great compression rate and greatly reduces file size</p>
+  </li>
+  <li>
+    <p>GIF : It saves images with 256 colors or less</p>
+
+    <p>​	   : Lossless compression</p>
+  </li>
+  <li>
+    <p>PNG : Portable Network Graphics</p>
+
+    <p>​         : Lossless compression</p>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,42 @@
+I"v<h3 id="controll-brightness-of-video">Controll Brightness of Video</h3>
+
+<p><br />
+<br /></p>
+
+<h3 id="1-point-processing">1. Point processing</h3>
+<ul>
+  <li>The operation sets the coordination pixel value of the output video from the translated coordination pixel value of the input video.</li>
+</ul>
+
+<p><img src="/assets/images/computervision/1-Brightness.png" alt="image" /></p>
+
+<ul>
+  <li>The pixel value of result video should be in specific range(ex- gray scale).</li>
+</ul>
+
+<h3 id="2-what-is-controll-brightness">2. What is controll brightness?</h3>
+<ul>
+  <li>The operation makes video more light or dark.</li>
+</ul>
+
+<p><img src="/assets/images/computervision/2-formula.png" alt="image" /></p>
+
+<h3 id="3-addition-computation-to-controll-brightness-of-video">3. Addition computation to controll brightness of video</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cv2</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">src1</span><span class="p">,</span><span class="n">src2</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">None</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">dst</span>
+</code></pre></div></div>
+
+<ul>
+  <li>src1 : (input) first video or scala.</li>
+  <li>src2 : (input) second video or scala.</li>
+  <li>dst : (output) the result video of addition computaion.</li>
+  <li>mask : Mask Video</li>
+  <li>dtype : The type of output video ex) cv2.CV_8U etc
+*** Note
+    <ul>
+      <li>The scalar is tuple that is composed of one real value or four real vale.</li>
+    </ul>
+  </li>
+</ul>
+
+:ET
