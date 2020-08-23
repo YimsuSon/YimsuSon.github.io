@@ -5,6 +5,14 @@ gem "github-pages", group: :jekyll_plugins
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+gem 'jekyll', '~> 3.6'
+
+# use local theme gem for testing
+gem "minimal-mistakes-jekyll", path: "../"
+
+
+# Plugins
+
 # If you have any plugins, put them here!
 # Plugins
 group :jekyll_plugins do
