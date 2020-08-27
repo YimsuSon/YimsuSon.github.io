@@ -35,9 +35,11 @@ toc_icon: "cog"
 
 
 ## 테그설정
-tags: "blog"
+
 categories:
   - Ai
+tags: "Ai-OpenCV"
+
 ---
 
 ### Arithmetic operation and logic operation of Video

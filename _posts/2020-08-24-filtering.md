@@ -40,7 +40,7 @@ categories:
   - Ai
   - Portfolio
 
-tags: "OpenCV"
+tags: "Ai-OpenCV"
 
 ---
 
