@@ -35,7 +35,7 @@ toc_icon: "cog"
 
 
 ## 테그설정
-tags: "blog"
+#tags: "blog"
 categories:
   - Portfolio
 ---
