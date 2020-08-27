@@ -50,7 +50,7 @@ categories:
 - Image filtering
     - The task filter the unecessary information and pass the necessary information to image
 
-</br/>
+<br/>
 
 - Frequency domain filtering
 
@@ -191,6 +191,10 @@ cv2.GaussianBlur(src, ksize, sigmaX, dst=None, sigmaY=None, borderType=None) -> 
 <br/>
 
 ![image](/assets/images/computervision/10-20200825.png)
+
+![image](/assets/images/computervision/10-20200825.png)
+
+
 
 <br/>
 <br/>
