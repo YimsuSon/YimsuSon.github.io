@@ -184,16 +184,6 @@ cv2.GaussianBlur(src, ksize, sigmaX, dst=None, sigmaY=None, borderType=None) -> 
 
 ![image](/assets/images/computervision/11-20200825.png)
 
-<br.>
-
-- Unsharp mask filter example
-
-<br/>
-
-![image](/assets/images/computervision/10-20200825.png)
-
-![image](/assets/images/computervision/10-20200825.png)
-
 
 
 <br/>
@@ -203,6 +193,9 @@ cv2.GaussianBlur(src, ksize, sigmaX, dst=None, sigmaY=None, borderType=None) -> 
 
 - Noise of image
     - The Unexpected form of the signal be added at pixel value of the image.
+
+
+<br/>
 
 
 ![image](/assets/images/computervision/12-20200825.png)
