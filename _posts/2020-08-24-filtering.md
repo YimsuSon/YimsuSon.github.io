@@ -54,7 +54,7 @@ categories:
 
 - Frequency domain filtering
 
-![image](/assets/images/computervision/3-frequencydomainfiltering.png)
+![image](/assets/images/computervision/2-frequencydomainfilter.png)
 
 <br/>
 
@@ -188,6 +188,8 @@ cv2.GaussianBlur(src, ksize, sigmaX, dst=None, sigmaY=None, borderType=None) -> 
 
 - Unsharp mask filter example
 
+<br/>
+
 ![image](/assets/images/computervision/10-20200825.png)
 
 <br/>
@@ -222,9 +224,11 @@ cv2.GaussianBlur(src, ksize, sigmaX, dst=None, sigmaY=None, borderType=None) -> 
 
 - Median filter function
 
+
 ``` c
 cv2.medianBlur(src, ksize, dst=None) -> dst
 ```
+
 
 - src : Input image 
 - ksize : Kernel size
@@ -283,7 +287,6 @@ cv2.bilateralFilter(src, d, sigmaColor, sigmaSpace, dst=None, borderType=None) -
 - sigmaSpace : Standard deviation in coordination space
 - dst : Output image
 - borderType : Edge pixel processing method
-
 
 
 
