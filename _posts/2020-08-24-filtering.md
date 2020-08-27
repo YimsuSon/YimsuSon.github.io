@@ -35,10 +35,13 @@ toc_icon: "cog"
 
 
 ## 테그설정
-tags: "blog"
+
 categories:
   - Ai
   - Portfolio
+
+tags: "OpenCV"
+
 ---
 
 ### Image filtering
