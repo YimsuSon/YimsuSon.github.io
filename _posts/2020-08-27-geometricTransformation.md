@@ -1,6 +1,6 @@
 ---
 title: Geometric transformation
-excerpt: Computer Vision
+excerpt: ComputerVision
 
 
 #최상위 사진
@@ -40,7 +40,7 @@ categories:
   - Ai
   - Portfolio
 
-tags: "Ai-OpenCV"
+tags: "ComputerVision"
 
 ---
 
@@ -49,8 +49,53 @@ tags: "Ai-OpenCV"
 <br/>
 <br/>
 
-### 1. What is image filtering
-- Image filtering
-    - The task filter the unecessary information and pass the necessary information to image
+### 1. Transformation of image and shear transition
+- Meaning of geometric transformation
+    - The task to change the whole image by altering arrangement of pixel composing image.
+    - ex) Image registration, removal of geometric distortion, etc.
+<br/>
+
+
+![image](/assets/images/computervision/1-20200827.png)
+<br/>
+
+- Translation transformation
+  - The transformation moving the image as specific size to horizontal or vertical direction.
+  - It have to set the translation displacement of x-axis and y-axis 
 
 <br/>
+
+![image](/assets/images/computervision/2-20200827.png)
+
+<br/>
+
+- Affine transformation function
+
+``` c
+
+cv2.warpAffine(src, M, dsize, dst=None, flags=None, borderMode=None, borderValue=None) -> dst
+
+```
+
+- src : Input image
+- M : 2 x 3 affine metrix
+- dsize : Result image size
+- dst : Output image
+- flags : Interpolation type
+- borderMode : Edge pixel expension method
+- borderValue : default value is 0
+
+<br/>
+
+- Example of translation transformation of the image
+
+![image](/assets/images/computervision/3-20200827.png)
+
+<br/>
+
+
+- Shear transformation 
+  - It have to set each x-axis and y-axis.
+
+
+
