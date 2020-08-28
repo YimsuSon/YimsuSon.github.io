@@ -37,8 +37,8 @@ toc_icon: "cog"
 ## 테그설정
 
 categories:
-  - Ai
-tags: "Ai-OpenCV"
+  - ComputerVision
+tags: "ComputerVision"
 ---
 
 ### Handle the keyboard Task

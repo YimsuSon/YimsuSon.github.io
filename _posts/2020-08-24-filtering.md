@@ -37,10 +37,10 @@ toc_icon: "cog"
 ## 테그설정
 
 categories:
-  - Ai
+  - ComputerVision
   - Portfolio
 
-tags: "Ai-OpenCV"
+tags: "ComputerVision"
 
 ---
 
