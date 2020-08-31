@@ -97,5 +97,57 @@ cv2.warpAffine(src, M, dsize, dst=None, flags=None, borderMode=None, borderValue
 - Shear transformation 
   - It have to set each x-axis and y-axis.
 
+<br/>
+<br/>
 
+
+### 2. Shrinkage and enlargement of image
+<br/>
+
+
+- Scale transformation
+  - The transformation that size of image make larger or smaller than original image.
+  - Specifying the scale factor of x-axis and y-axis
+
+<br/>
+
+![image](/assets/images/computervision/20200831_1.png)
+
+<br/>
+
+- Scale transformation code
+
+```
+cv2.resize(src, dsize, dst=None, fx=None, fy=None, interpolation=None) -> dst
+```
+- src : Input image
+- dsize : Output image size
+- dst : Out image
+- fx,fy : scale factor of x,y direction
+- interpolation : decide interpolation
+
+<br/>
+
+- Scale transformation example
+
+
+<br/>
+
+![image](/assets/images/computervision/20200831_2.png)
+
+<br/>
+
+- Scale transformaion precaution
+  - When scale transformation be applied to image, Detail of image disappear
+   - After Filtering smoothly input image, It apply to step by step shirinkage.
+   - cv2.INTER_AREA flag is used in cv2.resize() function of OpenCV
+
+
+
+
+<br/>
+
+![image](/assets/images/computervision/20200831_3.png)
+
+<br/>
 
