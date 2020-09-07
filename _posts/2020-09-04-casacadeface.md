@@ -1,5 +1,5 @@
 ---
-title: Cascade classifier
+title: Pedestrian Detection - Cascade classifier
 excerpt: Computer Vision
 
 
