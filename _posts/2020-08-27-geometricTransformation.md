@@ -1,5 +1,5 @@
 ---
-title: Geometric transformation
+title: Scanner - Geometric transformation
 excerpt: ComputerVision
 
 
