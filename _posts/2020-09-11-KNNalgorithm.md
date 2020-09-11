@@ -1,0 +1,154 @@
+---
+title: kNN algorithm
+excerpt: Computer Vision
+
+
+#최상위 사진
+header:
+  image: /assets/images/foo-bar-identity.jpg
+  teaser: /assets/images/foo-bar-identity-th.jpg
+
+gallery:
+  - url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+  - url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+  - url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
+    
+
+
+ #사이드바 설정 
+sidebar:
+  - title: "Role"
+    nav: sidebar-sample
+
+# 해당 글 목차
+toc: true
+toc_sticky: true
+
+toc_label: "Yimsu's Blog"
+toc_icon: "cog"
+
+
+## 테그설정
+
+categories:
+  - ComputerVision
+tags: "ComputerVision"
+
+---
+
+
+### kNN algorithm
+
+<br/>
+<br/>
+
+### 1. What is kNN - Nearest Neighbor algorithm
+
+<br/>
+
+- It is one of supervise train algorithm for classification or regression that look for train data of K number, where is mostly near by test data in feature space.
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_1.png)
+
+<br/>
+
+- NN vs kNN
+    - NN : Nearest neighbor (k=1)
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_2.png)
+
+<br/>
+
+- KNN algorithm object creation
+
+<br/>
+
+``` c
+cv2.ml.KNearest_create() -> retval
+```
+
+- retval : cv2.ml_KNearest object
+
+<br/>
+
+
+- Input data of classification using the KNN algorithm 
+
+<br/>
+
+``` c
+cv.ml_KNearest.findNearest(samples, k, results=None, neighborResponses=None, dist=None, flgs=None) -> retval, results, neighborResposnes, dist
+```
+- samples : Input sample matric with input vector stored by row unit 
+
+<br/>
+
+- KNN algorithm poin classification example
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_3.png)
+
+<br/>
+
+
+
+### 2. KNN digit recognition
+
+<br/>
+
+- If it is the printed digit to setted font, Template matching is possible
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_5.png)
+
+<br/>
+
+- KNN digit recognition processing
+    - Making coordination of one point from 400-dimension using pixel value of image 20 x 20
+    - KNN algorithm point classification in 400-dimension space
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_6.png)
+
+<br/>
+
+- KNN digit recognition flow chart
+
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_7.png)
+
+<br/>
+
+
+
+
+### 2. k-means algorithm
+
+- k-means algorithm
+    - 
+
+
+
+
+
