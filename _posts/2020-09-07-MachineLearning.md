@@ -136,6 +136,37 @@ data of two class. Using kernel method could adapt to non linear data classifica
 
 <br/>
 
+- Machine learning algorithm train
+
+<br/>
+
+``` c
+cv2.ml_StatModel.train(samples, layout, responses) -> retval
+```
+
+<br/>
+
+- samples : train data matrix
+- layout : train data set method
+- responses : Response matrix for each train data
+- retval : If train is sucess, It will print True
+
+<br/>
+
+- Machine learning algorithm predect
+
+<br/>
+
+``` c
+cv2.ml_StateModel.predict(samples, result=None, flags=None) -> retval, results
+```
+
+<br/>
+
+- samples : the matrix stored input vector to row unit
+- results : the matrix stored predict result such as classification or regression for each sample data
+- flags : additional flag. default is 0
+- retval : It is different depends on algorithm 
 
 
 
