@@ -38,6 +38,7 @@ toc_icon: "cog"
 
 categories:
   - ComputerVision
+  - Portfolio
 tags: "ComputerVision"
 
 ---
@@ -146,9 +147,61 @@ cv.ml_KNearest.findNearest(samples, k, results=None, neighborResponses=None, dis
 ### 2. k-means algorithm
 
 - k-means algorithm
-    - 
+    - Cluster algorithm the given data divides section of k number
+            ![image](/assets/images/computervision/20200911_8.png)
+
+
+- Process
+    1. Select random k number center
+    2. Select nearest center to every data
+    3. Recalculate center to each cluster
+    4. Repeat 2~3 process, If center changed
+    5. If not, it'll end
 
 
 
+<br/>
 
+![image](/assets/images/computervision/20200911_9.png)
+
+<br/>
+
+
+- Color image segment
+    - Express each pixel value of input image to the one point of color space 
+    - Perform k-means algorithm in color space
+    - Translate each pixel value into representive color of k number
+
+<br/>
+
+![image](/assets/images/computervision/20200911_10.png)
+
+<br/>
+
+
+- K-mean cluster code
+
+``` c 
+cv2.kmeans(data, K, bestLabels, criteria, attempts, flags, centers=None) -> retval, bestLabels, centers
+```
+
+- data : train data matrix
+- K : cluster number
+- bestLabels : cluster set matrix of each sample
+- criteria : finish standard
+- attempts : repeating number to using another initial label
+- flags : initial cent setting method
+- centers : matrix for expressing the matrix
+- retval : compatness measure  ![image](/assets/images/computervision/20200911_11.png)
+
+<br/>
+
+- k-means algorithm example
+
+
+<br/>
+
+![image](/assets/images/computervision/20200911_12.png)
+
+<br/>
 
