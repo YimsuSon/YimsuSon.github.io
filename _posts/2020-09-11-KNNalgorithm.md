@@ -148,7 +148,7 @@ cv.ml_KNearest.findNearest(samples, k, results=None, neighborResponses=None, dis
 
 - k-means algorithm
     - Cluster algorithm the given data divides section of k number
-            ![image](/assets/images/computervision/20200911_8.png)
+            ![image](/assets/images/computervision/20200914_8.png)
 
 
 - Process
@@ -162,7 +162,7 @@ cv.ml_KNearest.findNearest(samples, k, results=None, neighborResponses=None, dis
 
 <br/>
 
-![image](/assets/images/computervision/20200911_9.png)
+![image](/assets/images/computervision/20200914_9.png)
 
 <br/>
 
@@ -174,7 +174,7 @@ cv.ml_KNearest.findNearest(samples, k, results=None, neighborResponses=None, dis
 
 <br/>
 
-![image](/assets/images/computervision/20200911_10.png)
+![image](/assets/images/computervision/20200914_10.png)
 
 <br/>
 
@@ -192,7 +192,7 @@ cv2.kmeans(data, K, bestLabels, criteria, attempts, flags, centers=None) -> retv
 - attempts : repeating number to using another initial label
 - flags : initial cent setting method
 - centers : matrix for expressing the matrix
-- retval : compatness measure  ![image](/assets/images/computervision/20200911_11.png)
+- retval : compatness measure  ![image](/assets/images/computervision/20200914_11.png)
 
 <br/>
 
@@ -201,7 +201,7 @@ cv2.kmeans(data, K, bestLabels, criteria, attempts, flags, centers=None) -> retv
 
 <br/>
 
-![image](/assets/images/computervision/20200911_12.png)
+![image](/assets/images/computervision/20200914_12.png)
 
 <br/>
 
