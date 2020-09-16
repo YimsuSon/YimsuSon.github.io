@@ -1,5 +1,5 @@
 ---
-title: Cartoon filter - Image filtering
+title: 2.Cartoon filter - Image filtering
 excerpt: Computer Vision
 
 
