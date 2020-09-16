@@ -1,5 +1,5 @@
 ---
-title: kNN algorithm
+title: 3.K-means clustering - kNN & K-means algorithm
 excerpt: Computer Vision
 
 
