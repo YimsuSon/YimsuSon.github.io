@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: 1. Intro
 excerpt: Computer Vision
 
 
