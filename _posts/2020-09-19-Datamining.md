@@ -1,6 +1,6 @@
 ---
 title: 1.Data Mining
-excerpt: Computer Vision
+excerpt: Computer Science
 
 
 #최상위 사진
@@ -474,5 +474,6 @@ cos(d1, d2 ) = 0.3150
 
 ![image](/assets/images/computervision/20200919_12.png)
 <br/>
+
 
 
