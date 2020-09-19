@@ -41,8 +41,8 @@ categories:
 
 tags:
   - ResearchMethod
-  - "2020"
-  - "2020.09"
+
+  
 ---
 
 ## Resarch Process
