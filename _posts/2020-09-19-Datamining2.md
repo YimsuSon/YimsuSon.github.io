@@ -38,7 +38,13 @@ toc_icon: "cog"
 
 categories:
   - DataMining
-tags: "DataMining","2020","2020.09"
+
+tags:
+  - DataMining
+  - "2020"
+  - "2020.09"
+
+
 
 ---
 
