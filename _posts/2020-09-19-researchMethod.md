@@ -38,7 +38,7 @@ toc_icon: "cog"
 
 categories:
   - Paper
-tags: 
+tags: "ResearchMethod","2020","2020.09"
 
 ---
 
