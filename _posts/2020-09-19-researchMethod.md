@@ -1,6 +1,6 @@
 ---
 title: 1.Research Methodoloy
-excerpt: Computer Vision
+excerpt: Research
 
 
 #최상위 사진
