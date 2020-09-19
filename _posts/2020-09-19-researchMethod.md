@@ -44,7 +44,7 @@ tags: "ResearchMethod","2020","2020.09"
 
 ## Resarch Process
 
-
+ 
 ![image](/assets/images/computervision/20200919_1.png)
 
 <br/>
