@@ -173,3 +173,67 @@ contributions in print, Faculty rightfully claiming their contributions to suppo
 
 
 
+
+### 7 Latex
+
+• TeX is essentially a Markup Language (like HTML, XML and RTF)
+• TeX written by Donald Knuth in 70 ́s.
+• A revolution in typesetting .
+• Latex is an extension of TeX.
+• Macro packages to make TeX easier to use.
+• LaTeX is a document preparation system for high-quality typesetting.
+• LaTeX pronounced “lay-tech” or “lah-tech”.
+• not like latex gloves!
+
+• Designed by academics and easily accommodates academic use.
+• Good for large documents
+• De facto standard for scientific publishing
+• Professional typesetting
+• Best output
+• It is the standard for scientific documents
+• Processing Mathematical (& other) symbols
+• Meaning-based structuring (rather than appearance)
+• Knowledgeable and helpful user group
+• Its FREE!
+• Platform independent
+
+• MiKTeX
+    • MiKTeX is a typesetting system for the Windows.
+    • Download from www.miktex.org for free
+    • It is generally recommended to install MiKTeX first, then WinEdt.
+
+• WinEdt
+    • WinEdt is a text editor.
+    • WinEdt creates the source file (.tex and others).
+    • Download from www.winedt.com for free for 30 days.
+    • WinEdt costs $30.
+
+
+• TexStudio
+    • An integrated writing environment
+    • For creating LaTeX documents. 
+    • Easy and comfortable
+    • Syntax-highlighting,
+    • Integrated viewer,
+    • Reference checking,
+    • Free.
+
+
+
+- File structure
+    • Document Class
+        • Predefined Formats (article, report,book,..).
+            
+
+
+- Overleaf
+
+    • Overleafisacollaborativecloud-basedLaTeX editor.
+    • Used for writing, editing and publishing scientific documents.
+    • It partners with a wide range of scientific publishers to provide official journal LaTeX templates, and direct submission links.
+
+
+
+
+
+
