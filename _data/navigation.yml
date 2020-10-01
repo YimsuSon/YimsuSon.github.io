@@ -90,7 +90,7 @@ sidebar-sample:
 
   - title: "Daily"
     children:
-      - title: "Happy's Diary"
+      - title: "Brush House"
         url: /
       - title: "Food"
         url: /
