@@ -104,10 +104,89 @@ tags:
 
 
 ### 2.Model Selection
+- Using Validation Set
+    - Performed during model building
+
+    - Purpose is to ensure that model is not overly complex (to avoid overfitting)
+
+    - Need to estimate generalization error
+        - Using Validation Set
+        - Incorporating Model Complexity
+        - Estimating Statistical Bounds
+
     - Using Validation Set
-    - Incorporating Model Complexity
-    - Estimating Statistical Bounding
-    - Model Selection for Decision Trees
+
+        - Divide training data into two parts:
+            - Training set: 
+                - use for model building
+            - Validation set: 
+                - use for estimating generalization error
+                - Note: validation set is not the same as test set
+
+            - Drawback:
+                - Less data available for training
+
+
+- Incorporating Model Complexity
+    - Rationale: Occam’s Razor
+        - Given two models of similar generalization errors,  one should prefer the simpler model over the more complex model
+
+        - A complex model has a greater chance of being fitted accidentally
+
+        - Therefore, one should include model complexity when evaluating a model
+
+        - Gen. Error(Model) = Train. Error(Model, Train. Data) + x Complexity(Model)
+
+
+- Estimating Statistical Bounding
+        - Pessimistic Error Estimate of decision tree T with k leaf nodes
+
+
+- Model Selection for Decision Trees
+
+    - Pre-Pruning (Early Stopping Rule)
+        - Stop the algorithm before it becomes a fully-grown tree
+        - Typical stopping conditions for a node:
+            - Stop if all instances belong to the same class
+            - Stop if all the attribute values are the same
+        - More restrictive conditions:
+            - Stop if number of instances is less than some user-specified threshold
+            - Stop if class distribution of instances are independent of the available features (e.g., using χ 2 test)
+            - Stop if expanding the current node does not improve impurity     measures (e.g., Gini or information gain).
+            - Stop if estimated generalization error falls below certain threshold
+
+    - Post-pruning
+        - Grow decision tree to its entirety
+        - Subtree replacement
+            - Trim the nodes of the decision tree in a bottom-up fashion
+            - If generalization error improves after trimming, replace sub-tree by a leaf node 
+            - Class label of leaf node is determined from majority class of instances in the sub-tree
+        - Subtree raising
+            - Replace subtree with most frequently used branch
 
 
 ### 3.Model  Evaluation 
+
+
+- Purpose: 
+    - To estimate performance of classifier on previously unseen data (test set)
+
+- Holdout
+    - Reserve k% for training and (100-k)% for testing 
+    - Random subsampling: repeated holdout
+- Cross validation
+    - Partition data into k disjoint subsets
+    - k-fold: train on k-1 partitions, test on the remaining one
+    - Leave-one-out:   k=n
+
+
+- Variations on Cross-validation
+
+    - Repeated cross-validation
+        - Perform cross-validation a number of times
+        - Gives an estimate of the variance of the generalization error
+    - Stratified cross-validation
+        - Guarantee the same percentage of class labels in training and test
+        - Important when classes are imbalanced and the sample is small
+    - Use nested cross-validation approach for model selection and evaluation
+
