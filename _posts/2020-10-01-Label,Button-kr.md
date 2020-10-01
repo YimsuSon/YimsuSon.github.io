@@ -1,5 +1,5 @@
 ---
-title: 1.iOS Basic, Let’s make Label and Button in IOS app
+title: 1.iOS Basic, Label and Button 만들기
 excerpt: iOS
 
 
@@ -49,7 +49,7 @@ tags:
 ---
 
 
-Label 은  A view that displays one or more lines of informational text.  
+Label은 정보가 담겨있는 텍스트상자
 
 클래스는 여러 변수를 담을 수 있는 상자 입니다
 변수는 데이터를 적어 놓는 종이 
