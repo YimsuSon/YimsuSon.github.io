@@ -73,12 +73,16 @@ main:
 
 
 sidebar-sample:
-  - title: "CS"
+  - title: "Dev"
     children:
       - title: "Ai"
         url: /categories/#Ai
       - title: "ComputerVision"
         url: /categories/#ComputerVision
+      - title: "iOS"
+        url: https://yimsuson.github.io/categories/
+      - title: "ComputerScience"
+        url: https://yimsuson.github.io/categories/
       - title: "Paper"
         url: "https://yimsuson.github.io/categories/"
       - title: "Portfolio"
