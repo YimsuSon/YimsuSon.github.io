@@ -136,5 +136,68 @@ Binary Decision: (A < v) or (A ≥ v)
     - 3.3.2 Measure of Impurity: Entropy 
     - 3.3.3 Measure of Impurity: Classification Error
 
+How to determine the Best Split
+
+    - Greedy approach: 
+        - Nodes with purer class distribution are preferred
+
+    - Need a measure of node impurity:
+
+
+Measures of Node Impurity
+
+    - Gini Index
+
+        - Maximum  of ￼when records are equally distributed among all classes, implying the least beneficial situation for classification
+        - Minimum  of 0 when all records belong to one class, implying the most beneficial situation for classification
+
+    - Entropy
+
+
+
+
+    - Misclassification error
+
+
+Finding the Best Split
+
+    - Compute impurity measure (P) before splitting
+    - Compute impurity measure (M) after splitting
+        - Compute impurity measure of each child node
+        - M is the weighted impurity of child nodes
+    - Choose the attribute test condition that produces the highest gain
+
+
+
+
+Binary Attributes: Computing GINI Index
+
+    - Splits into two partitions (child nodes)
+    - Effect of Weighing partitions: 
+    - Larger and purer partitions are sought
+
+
+
+Categorical Attributes: Computing Gini Index
+- For each distinct value, gather counts for each class in the dataset
+- Use the count matrix to make decisions
+
+
+
 
 - 3.4 Decision Tree Based Classification
+
+
+
+
+- Advantages:
+    - Inexpensive to construct
+    - Extremely fast at classifying unknown records
+    - Easy to interpret for small-sized trees
+    - Robust to noise (especially when methods to avoid overfitting are employed)
+    - Can easily handle redundant or irrelevant attributes (unless the attributes are interacting)
+
+Disadvantages: 
+    - Space of possible decision trees is exponentially large. Greedy approaches are often unable to find the best tree.
+    - Does not take into account interactions between attributes
+    - Each decision boundary involves only a single attribute
