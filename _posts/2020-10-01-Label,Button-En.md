@@ -48,20 +48,25 @@ tags:
 
 ---
 
-
+<br/>
 Label = a view that displays one or more lines of informational text.  
 
+<br/>
 Variable = The paper written about data.
 
+<br/>
 Class = The carton which can contains lots of variable.
 
+<br/>
 Function = The set of code that repeatly implement specific order.
 
+<br/>
 Method = The function defined inside class.
 
-
+<br/>
 IBOutlet = It could do the task that update the text of UILabel, set the background image of UIView and gain the present value of UIStepper etc.
 
+<br/>
 IBAction = Embody the running code when you touch the event( ex) Button ).
 
 
