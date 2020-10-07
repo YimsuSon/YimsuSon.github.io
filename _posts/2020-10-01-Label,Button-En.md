@@ -220,7 +220,7 @@ class ViewController: UIViewController {
 
 <br/>
 
-Shortcut Key
+ShortcutKey
 <br/>
 
 ``` c
