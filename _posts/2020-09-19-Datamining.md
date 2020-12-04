@@ -277,16 +277,16 @@ tags:
 
 - Outliers
     - Outliers are data objects with characteristics that are considerably different than most of the other data objects in the data set
-        - Case 1: Outliers are  noise that interferes with data analysis 
-        - Case 2: Outliers are  the goal of our analysis
+        - Case 1: Outliers are noise that interfereswith data analysis 
+        - Case 2: Outliers are the goal of our analysis
             - Credit card fraud
             - Intrusion detection
 
 
 - Missing Values
     - Reasons for missing values
-        - Information is not collected  (e.g., people decline to give their age and weight)
-        - Attributes may not be applicable to all cases  (e.g., annual income is not applicable to children)
+        - Information is not collected (e.g., people decline to give their age and weight)
+        - Attributes may not be applicable to all cases (e.g., annual income is not applicable to children)
 
     - Handling missing values
         - Eliminate data objects or variables
@@ -372,8 +372,8 @@ tags:
 
     - Similarities, also have some well known properties.
 
-        - s(x, y) = 1 (or maximum similarity) only if x = y.  (does not always hold, e.g., cosine)
-        - s(x, y) = s(y, x)   for all x and y. (Symmetry) 
+        - s(x, y) = 1 (or maximum similarity) only if x = y. (does not always hold, e.g., cosine)
+        - s(x, y) = s(y, x)   for all x and y. (Symmetry)
 	        - where s(x, y) is the similarity between points (data objects), x and y.
 
 
