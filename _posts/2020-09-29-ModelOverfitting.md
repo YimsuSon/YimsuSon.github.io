@@ -86,7 +86,7 @@ tags:
 
     - Many algorithms employ the following greedy strategy:
         - Initial model: M
-        - Alternative model: M’ = M ∪ γ,    where γ is a component to be added to the model (e.g., a test condition of a decision tree)
+        - Alternative model: M’ = M ∪ γ,   where γ is a component to be added to the model (e.g., a test condition of a decision tree)
         - Keep M’ if improvement, Δ(M,M’) > α
 
     - Often times, γ is chosen from a set of alternative components, Γ = {γ1, γ2, …, γk}
@@ -152,7 +152,7 @@ tags:
         - More restrictive conditions:
             - Stop if number of instances is less than some user-specified threshold
             - Stop if class distribution of instances are independent of the available features (e.g., using χ 2 test)
-            - Stop if expanding the current node does not improve impurity     measures (e.g., Gini or information gain).
+            - Stop if expanding the current node does not improve impurity    measures (e.g., Gini or information gain).
             - Stop if estimated generalization error falls below certain threshold
 
     - Post-pruning
