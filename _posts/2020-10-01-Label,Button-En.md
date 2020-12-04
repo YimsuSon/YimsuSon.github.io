@@ -49,8 +49,17 @@ tags:
 ---
 1.iOS 기본강의 추천 Kxcoding
 
+
+<br/>
 국비지원, 패스트캠퍼스, youtube 등 iOS 강의를 해주는 곳은 많다
 
+<br/>
 하지만 상세하게 원리를 예로 들어 왜이렇게 작동하는지 입문자가 알수있도록 설명하는곳은 드문것같다
 
+<br/>
 가장 돈값을 하는 강의
+
+
+<br/>
+![image](/assets/images/computervision/20201204_1.png)
+<br/>
