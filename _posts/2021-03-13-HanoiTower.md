@@ -58,6 +58,17 @@ tags:
 <br/>
 <br/>
 
+diagrams.net 에서 처음 그려본 기념으로 올려보는 포스트.
+<br/>
+
+1 번 막대, 2번 막대, 3번 막대를 그린뒤
+A,B,C 3개의 원반을 그린다.
+<br/>
+
+코드를 실행한 후 log 의 설명을 따라가본 뒤
+순서도를 보면 하노이의 탑을 좀 더 쉽게 이해할수있다 
+<br/>
+
 ![image](/assets/images/computervision/tower.png)
 
 <br/>
