@@ -50,10 +50,6 @@ tags:
 
 ### 1.프로그래머스 lv3 - 하노이의 탑
 
-
-
-### 1.프로그래머스 lv3 - 하노이의 탑
-
 <br/>
 <br/>
 
@@ -62,7 +58,7 @@ tags:
 <br/>
 <br/>
 
-![image](/assets/images/computervision/20200903_2.png)
+![image](/assets/images/computervision/tower.png)
 
 <br/>
 
